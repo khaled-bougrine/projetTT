@@ -1,0 +1,82 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- Meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<title>Watchlist App</title>
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+			<a class="navbar-brand" href="homepage-static.html">Tunisie
+				Telecom Appp</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+		</nav>
+		<div style="display: flex; flex-wrap: wrap;">
+			<img th:src="@{logo.png}" width="150">
+			<h2 class="mt-4">Welcome to the Tunisie Telecom application!</h2>
+			<br>
+		</div>
+		<br> <br> <br> <br>
+		<div class="row">
+			<div class="col-4"></div>
+			<h3>Configuration</h3>
+		</div>
+
+
+		
+		<form action="#" method="post" th:action="@{/config}"
+			th:object="${name}">
+			<div class="row">
+				<div class="col-4"></div>
+			
+					<input type="text" class="form-control col-4" th:field="*{fileName}"
+					style="margin-top: 50;" placeholder="fileUri">
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-4"></div>
+				<input type="text" class="form-control col-4" th:field="*{passWord}"
+					style="margin-top: 50;" placeholder="passWord">
+			</div>
+
+
+			<div class="row" style="margin-top: 50;">
+
+				<div class="col-4"></div>
+				<button type="submit" class="btn-outline-dark btn-lg btn-block col-4"
+					style="padding-top: 20;">
+					<h4>Submit</h4>
+				</button>
+			</div>
+		</form>
+		<div class="col-4"></div>
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+</html>

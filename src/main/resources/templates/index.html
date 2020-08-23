@@ -1,0 +1,92 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta name="viewport"
+	content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<title>Watchlist App</title>
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+			<a class="navbar-brand" href="homepage-static.html">Tunisie
+				Telecom App</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link active" th:href="@{/}">Home</a></li>
+					<li class="nav-item "><a class="nav-link"
+						th:href="@{/recherche}">Recherche</a></li>
+					<li class="nav-item "><a class="nav-link" th:href="@{/config}">configuration</a></li>
+				</ul>
+
+			</div>
+
+		</nav>
+		<div class="row">
+			<div class="col-7" style="display: flex; flex-wrap: wrap;">
+				<img src="logo.png" width="150">
+				<h2 class="mt-4">list of clients</h2>
+			</div>
+			<div class="col-5" style="margin-top: 30;">
+				<a class="btn btn-info" role="button"
+					th:href="@{/formClient}">addClient</a>
+			</div>
+
+		</div>
+		<table class="table">
+			<thead>
+				<tr class="thead-light">
+					<th class="text-left" th:text="${title.get(0)}"></th>
+					<th class="text-left" th:text="${title.get(1)}"></th>
+					<th class="text-left" th:text="${title.get(2)}"></th>
+					<th class="text-left" th:text="${title.get(3)}"></th>
+					<th class="text-left"></th>
+					<th class="text-left"></th>
+					<th class="text-left"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="client : ${list}">
+
+					<td th:text="${client.attributesList.get(0)}"></td>
+					<td th:text="${client.attributesList.get(1)}"></td>
+					<td th:text="${client.attributesList.get(2)}"></td>
+					<td th:text="${client.attributesList.get(3)}"></td>
+					<td><a href="#" class="btn btn-info" role="button"
+						th:href="@{formClient/(id=${client.nb})}">Update</a></td>
+					<td><a href="#" class="btn btn-info" role="button"
+						th:href="@{/(id=${client.nb})}">Delete</a></td>
+					<td><a href="#" class="btn btn-info" role="button"
+						th:href="@{recupererPar(id=${client.nb})}">See Profile</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<hr />
+
+		<div>Number of clients:</div>
+		<div th:text="${length}"></div>
+
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+</html>

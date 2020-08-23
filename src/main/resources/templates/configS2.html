@@ -1,0 +1,85 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- Meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<title>tunisie telecom App</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row" style="display: flex; flex-wrap: wrap;">
+			<img src="logo.png" width="150">
+			<h2 class="mt-4">Welcome to the Tunisie Telecom application!</h2>
+			<br>
+		</div>
+
+
+		<form method="post" th:object="${name}" th:action="@{/configStep2}">
+
+
+			<div class="row">
+							<div class="col-4"></div>
+			
+				<h2>choose the ID for the table</h2>
+
+			</div>
+		<hr />
+
+			<div class="row">
+				<div class="col-3" th:each="i  :${entete}">
+
+					<input type="checkbox" name="gender" th:value="${i}"
+						th:field="*{id}"> <label> <h5 th:text="${i}"></h5></label>
+
+				</div>
+
+
+
+			</div>
+					<hr />
+			
+			<div class="row">
+				<div class="col-4"></div>
+				<h2>choose the Name key for the table</h2>
+
+			</div>
+		<hr />
+
+			<div class="row">
+				<div class="col-3" th:each="i  :${entete}">
+
+					<input type="checkbox" name="gender" th:value="${i}"
+						th:field="*{name}"> <label> <h5 th:text="${i}"></h5></label>
+
+				</div>
+
+
+
+			</div>
+
+
+
+
+<div class="row">
+<div class="col-4"></div>
+			<button type="submit" class="btn-outline-dark btn-lg btn-block col-4">
+				<h4>Submit</h4>
+			</button>
+			</div>
+		</form>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+</html>
