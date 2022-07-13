@@ -10,12 +10,11 @@
 ## graphic interfaces realized in this project.
 
 ![Tux, readMe ](src/main/resources/static/readMe1.png)
-![Tux, readMe ](src/main/resources/static/readMe1.png)
-![Tux, readMe ](src/main/resources/static/readMe1.png)
-![Tux, readMe ](src/main/resources/static/readMe1.png)
-![Tux, readMe ](src/main/resources/static/readMe1.png)
-![Tux, readMe ](src/main/resources/static/readMe1.png)
-![Tux, readMe ](src/main/resources/static/readMe1.png)
+![Tux, readMe ](src/main/resources/static/readMe2.png)
+![Tux, readMe ](src/main/resources/static/readMe3.png)
+![Tux, readMe ](src/main/resources/static/readMe4.png)
+![Tux, readMe ](src/main/resources/static/readMe5.png)
+
 
 
 
