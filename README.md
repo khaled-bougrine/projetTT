@@ -9,11 +9,18 @@
 
 ## graphic interfaces realized in this project.
 
-![Tux, readMe ](src/main/resources/static/readMe1.png)
+
+### Login Page
 ![Tux, readMe ](src/main/resources/static/readMe2.png)
+
+### the first page contains all the rows of the Excel file
+![Tux, readMe ](src/main/resources/static/readMe1.png)
+### Update a row in the Excel file 
+
 ![Tux, readMe ](src/main/resources/static/readMe3.png)
+
+### search in an Excel file
 ![Tux, readMe ](src/main/resources/static/readMe4.png)
-![Tux, readMe ](src/main/resources/static/readMe5.png)
 
 
 
