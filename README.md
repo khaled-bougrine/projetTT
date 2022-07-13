@@ -1,5 +1,7 @@
 # Web application to manipulate Excel files through a graphical interface.
-CRUD with spring Boot with a database in the form of Excel files 
+
+CRUD operation using Spring Boot with a database in the form of Excel files 
+
 ![Tux, readMe ](src/main/resources/static/readMe-removebg-preview.png)
 
 
@@ -30,11 +32,7 @@ CRUD with spring Boot with a database in the form of Excel files
 
 
 
-[![Build Status](https://travis-ci.org/codecentric/springboot-sample-app.svg?branch=master)](https://travis-ci.org/codecentric/springboot-sample-app)
-[![Coverage Status](https://coveralls.io/repos/github/codecentric/springboot-sample-app/badge.svg?branch=master)](https://coveralls.io/github/codecentric/springboot-sample-app?branch=master)
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-Minimal [Spring Boot](http://projects.spring.io/spring-boot/) sample app.
 
 ## Requirements
 
